@@ -14,7 +14,7 @@ var filters = {
 	{
 		name: "Laktose",
 		  "filter_exclusion": [
-			"Kondens[a-zA-Z]*milch", "Butter", "Schafmilch", "Buttermilchpulver", "Buttermilch", "Lactitol", "Laktit", "Entrahmte Milch", "Kefir", "Kefirpulver", "Lactose Monohydrat", "Joghurt", "Yoghurt", "Magerjoghurtpuvler", "Magermilch", "Magermilchpulver", "Milch", "Milcherzeugnis", "Milchpulver", "Milchzubereitung", "Milchzucker", "Vollmilchjoghurt", "Laktose", "Lactose", "Molke", "Molkenerzeugnisse", "Molkenpulver", "Molkenproteinkonzentrat", "Rahm", "Sahne", "Quark", "Magerquark", "Speisequark", "Sauermolke", "Sauermolkepulver", "Süßmolke", "Süssmolke", "Süßmolkenpulver", "Süssmolkenpulver", "Vollmilch", "Vollmilchpulver", "Frischkäse", "Käse"
+			"Kondens[a-zA-Z]*milch", "Butter", "Kuhmilch", "Bergmilch", "Schafmilch", "Büffelmilch", "Ziegenmilch", "Buttermilchpulver", "Buttermilch", "Lactitol", "Laktit", "Entrahmte Milch", "Kefir", "Kefirpulver", "Lactose Monohydrat", "Joghurt", "Yoghurt", "Magerjoghurtpuvler", "Magermilch", "Magermilchpulver", "Milch", "Milcherzeugnis", "Milchpulver", "Milchzubereitung", "Milchzucker", "Vollmilchjoghurt", "Laktose", "Lactose", "Molke", "Molkenerzeugnisse", "Molkenpulver", "Molkenproteinkonzentrat", "Rahm", "Rahmpulver", "Kaffeerahm", "Kaffeerrahm", "Kafeerahm", "Halbrahm", "Vollrahm", "Rehmpulver", "Sauerrahm", "Kefferahm", "Sahne", "Kaffeesahne", "Quark", "Magerquark", "Speisequark", "Sauermolke", "Sauermolkepulver", "Süßmolke", "Süssmolke", "Süßmolkenpulver", "Süssmolkenpulver", "Vollmilch", "Vollmilchpulver", "Frischkäse", "Doppelrahmfrischkäse", "Käse", "Hartkäse", "Parmigiano Reggiano", "Mozzarella", "Frankendammer", "Edamer", "Extrahartkäse", "Halbhartkäse"
 		  ],
 		  "filter_warning": [
 			"Buttereinfett", "Natriumstearoyl-2-lactylat", "E481", "Milcheiweiß", "Milcheiweiss", "Milchprotein"
@@ -23,7 +23,7 @@ var filters = {
 	{
 		name: "Schalenfrüchte",
 		  "filter_exclusion": [
-			"Mandeln", "Mandel", "Haselnüsse", "Haselnusse", "Haselnuss", "Haselnussstücke", "Haselnusspaste", "Walnüsse", "Walnuuss", "Kaschunüsse", "Kaschunuss", "Cashewnuss", "Cashewnüsse", "Cashewkerne", "Cashenüsse", "Pekannüsse", "Pekannuuss", "Paranüsse", "Paranuss", "Paranusskerne", "Pistazien", "Pistazie", "Macadamia", "Macadamianuss", "Macadamianüsse", "Queenslandnüsse ", "Queenslandnuss ", "Marzipan", "Pinienkernen", "Pinienkern", "Pinienkerne"
+			"Schalenfrüchte", "Nüsse", "Mandeln", "Mandel", "Haselnüsse", "Haselnusse", "Haselnuss", "Haselnussstücke", "Haselnusspaste", "Walnüsse", "Walnuuss", "Walnusskerne", "Kaschunüsse", "Kaschunuss", "Cashewnuss", "Cashewnüsse", "Cashewkerne", "Cashenüsse", "Pekannüsse", "Pekannuuss", "Paranüsse", "Paranuss", "Paranusskerne", "Pistazien", "Pistazie", "Pistazienpaste", "Macadamia", "Macadamianuss", "Macadamianüsse", "Queenslandnüsse ", "Queenslandnuss ", "Marzipan", "Pinienkernen", "Pinienkern", "Pinienkerne"
 		  ],
 		  "filter_warning": [
 			"Mortadella"
