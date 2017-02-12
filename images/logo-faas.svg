@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="95px" height="35px" viewBox="0 0 95 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="t" transform="translate(-89.000000, -126.000000)" fill="#ffffff">
+            <g id="Group" transform="translate(89.000000, 126.000000)">
+                <polygon id="F" points="9.12 25 13.272 25 13.272 19.504 17.328 19.504 17.328 16.168 13.272 16.168 13.272 12.88 19.32 12.88 19.32 9.496 9.12 9.496"></polygon>
+                <path d="M25.156,25 L25.156,24.664 L29.98,9.472 L34.924,9.472 L39.748,24.664 L39.748,25 L35.476,25 L34.684,22.192 L29.908,22.192 L29.116,25 L25.156,25 Z M30.844,18.904 L33.748,18.904 L32.308,13.84 L30.844,18.904 Z" id="A"></path>
+                <path d="M55.056,25 L55.056,24.736 L59.952,9.448 L63.048,9.448 L67.896,24.712 L67.896,25 L65.28,25 L64.104,21.16 L58.68,21.16 L57.504,25 L55.056,25 Z M59.304,19.048 L63.48,19.048 L61.392,12.208 L59.304,19.048 Z" id="A"></path>
+                <path d="M75.412,23.968 C76.348,24.64 78.028,25.24 79.996,25.24 C83.308,25.24 85.324,23.56 85.324,20.56 C85.324,18.472 84.22,17.296 82.204,16.48 L80.188,15.688 C78.844,15.16 78.268,14.536 78.268,13.336 C78.268,12.016 79.156,11.416 80.524,11.416 C81.748,11.416 83.212,11.92 84.004,12.328 L84.748,10.216 C83.764,9.664 82.204,9.256 80.5,9.256 C77.716,9.256 75.652,10.792 75.652,13.696 C75.652,16.024 77.02,17.32 79.156,18.136 L80.668,18.712 C81.964,19.192 82.612,19.696 82.612,20.968 C82.588,22.48 81.46,23.08 79.972,23.08 C78.364,23.08 77.068,22.48 76.18,21.976 L75.412,23.968 Z" id="S"></path>
+                <path d="M3,3 L3,32 L45,32 L45,3 L3,3 Z M0,0 L48,0 L48,35 L0,35 L0,0 Z" id="Rectangle" fill-rule="nonzero"></path>
+                <rect id="Rectangle-2" x="93" y="0" width="2" height="2"></rect>
+                <rect id="Rectangle-2" x="93" y="33" width="2" height="2"></rect>
+                <rect id="Rectangle-2" x="93" y="22" width="2" height="2"></rect>
+                <rect id="Rectangle-2" x="93" y="11" width="2" height="2"></rect>
+                <rect id="Rectangle-2" x="70" y="33" width="2" height="2"></rect>
+                <rect id="Rectangle-2" x="81" y="33" width="2" height="2"></rect>
+                <rect id="Rectangle-2" x="81" y="0" width="2" height="2"></rect>
+                <rect id="Rectangle-2" x="58" y="33" width="2" height="2"></rect>
+                <rect id="Rectangle-2" x="58" y="0" width="2" height="2"></rect>
+                <rect id="Rectangle-2" x="70" y="0" width="2" height="2"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

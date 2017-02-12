@@ -1,0 +1,348 @@
+@import "variables";
+@import "grid";
+
+// CSS
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: $font-size-base;
+  font-family: $font-family-default;
+  line-height: $line-height;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $color-gray-light;
+  padding-bottom: _(2);
+
+  @media (min-width: $bp-search) {
+    padding-top: _(9);
+  }
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+h1 {
+  font-size: $font-size-large;
+}
+
+h4 {
+  font-size: $font-size-base;
+  margin-bottom: _(0.25);
+}
+
+.h3 {
+  font-size: $font-size-base;
+  font-weight: bold;
+  margin-bottom: _(0.5);
+}
+
+a {
+  color: $color-link;
+  text-decoration: none;
+
+  &:hover,
+  &:active {
+    color: $color-link-hover;
+  }
+}
+
+p {
+  margin: 0;
+  margin-bottom: _(0.75);
+}
+
+
+.productView {
+  padding: _();
+  background-color: white;
+  display: inline-block;
+  margin-bottom: _();
+  box-shadow: 0 pxRem(2) pxRem(2) 0 rgba(black, 0.15);
+  border-radius: $border-radius-base;
+  width: 100%;
+}
+
+.productContentView {
+  display: none;
+  font-size: $font-size-small;
+  margin-top: _(0.25);
+}
+
+.productNameView {
+  font-size: $font-size-base;
+  font-weight: bold;
+  margin-bottom: _(0.5);
+}
+
+.productImage {
+  width: 100%;
+}
+
+.productImageView {
+  overflow: hidden;
+  max-height: _(10);
+  margin-bottom: _(0.5);
+}
+
+.productDetailsView {
+  padding: _(0.25) _(0.5);
+  border: pxRem(1) solid $color-link;
+  border-radius: $border-radius-base;
+}
+
+.productDetailsViewLabel {
+  font-weight: bold;
+  font-size: $font-size-base;
+  color: $color-link;
+
+  &:hover {
+    color: $color-link-hover;
+  }
+
+  label {
+    margin-bottom: 0;
+  }
+
+  label:hover {
+    cursor: pointer;
+  }
+
+  &:before {
+    content: "+";
+    float: left;
+    margin-right: _(0.5);
+  }
+}
+
+.productDetailsLink {
+  margin-top: _(0.5);
+  display: block;
+}
+
+.hidden {
+	display: none;
+}
+
+.ui-widget {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: $color-gray-dark;
+  margin-bottom: _();
+  color: white;
+
+  @media (max-width: $bp-search) {
+    position: relative;
+  }
+
+  a {
+    color: lighten($color-link, 20%);
+
+    &:hover {
+      color: mix(white, $color-link, 60%);
+    }
+  }
+}
+
+.search-bar {
+  padding-top: _();
+  padding-bottom: _();
+
+  @media (max-width: $bp-search) {
+    padding-left: _(0.5);
+    padding-right: _(0.5);
+  }
+}
+
+$height-input: _(2);
+
+@mixin form-styles {
+  padding: 0 _(0.5);
+  background-color: white;
+  height: $height-input;
+  font-family: $font-family-default;
+  font-size: $font-size-base;
+  border-radius: $border-radius-base;
+  border: none;
+
+  &:focus {
+    box-shadow: 0 0 0 pxRem(3) rgba(white, 0.4);
+    outline: none;
+  }
+}
+
+input[type="text"],
+input[type="search"] {
+  @include form-styles;
+  display: block;
+  width: 100%;
+}
+
+button {
+  background-color: $color-link;
+  font-size: $font-size-base;
+  font-family: $font-family-default;
+  color: white;
+  border: none;
+  padding: _(0.5) _(1);
+  border-radius: $border-radius-base;
+
+  &:hover {
+    background-color: $color-link-hover;
+    cursor: pointer;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: inset 0 0 0 pxRem(3) rgba(white, 0.5);
+  }
+}
+
+label {
+  margin-bottom: _(0.25);
+  display: block;
+}
+
+select {
+  @include form-styles;
+  width: 100%;
+}
+
+.search {
+  position: relative;
+}
+
+.search__button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: $height-input;
+  box-shadow: inset 0 0 0 pxRem(3) white;
+  border-radius: _(0.25);
+  width: _(4);
+}
+
+.number {
+  font-weight: bold;
+  margin-right: _(0.5);
+  padding-right: _(0.5);
+  border-right: 1px solid rgba(white, 0.3);
+  display: inline-block;
+}
+
+[id*="showIngredients"] {
+  display: none;
+}
+
+[id*="showIngredients"]:checked ~ .productContentView {
+  display: block;
+}
+
+[id*="showIngredients"]:checked ~ .productDetailsViewLabel {
+  &:before {
+    content: "–";
+  }
+}
+
+.ui-widget__logo {
+  height: _(0.75);
+  margin-bottom: _(0.5);
+  margin-top: _(0.5);
+  display: block;
+
+  @media (min-width: $bp-search) {
+    height: _(1.25);
+  }
+}
+
+.u-text-align-right {
+  text-align: right;
+}
+
+.search-results-title {
+  text-align: center;
+  margin-bottom: _();
+
+  @media (min-width: $bp-search) {
+    margin-bottom: _(2);
+  }
+}
+
+.search-results-amount {
+  color: $color-link;
+}
+
+// Alerts
+
+.warningView {
+  font-size: $font-size-small;
+  color: $color-red;
+  margin-top: _(0.5);
+  padding-top: _(0.5);
+  border-top: pxRem(1) solid #eee;
+}
+
+.warnReason {
+  font-weight: bold;
+  margin-top: _(0.25);
+}
+
+.go-search-something {
+  text-align: center;
+  color: $color-text-secondary;
+
+  h1 {
+    font-weight: 400;
+
+    @media (max-width: $bp-search) {
+      font-size: $font-size-base;
+    }
+  }
+}
+
+.go-search-something__image {
+  height: _(8);
+  margin-bottom: _(2);
+  margin-top: _(2);
+  opacity: 0.15;
+
+  @media (max-width: $bp-search) {
+    height: _(6);
+  }
+}
+
+.logo-bar {
+  background-color: rgba(black, 0.5);
+
+  @media (max-width: $bp-search) {
+    padding-left: _(0.5);
+    padding-right: _(0.5);
+  }
+}
+
+.logo-bar [class*="column-"].no-break {
+  margin-bottom: 0;
+}
+
+@import "dialog";
+@import "loader";
+
+// Icons
+
+.zmdi {
+  margin-right: _(0.25);
+}

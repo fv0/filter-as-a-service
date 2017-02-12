@@ -1,0 +1,39 @@
+// Functions
+
+@function _($rows: 1) {
+  @return ($line-height * $font-size-base) * $rows;
+}
+
+@function pxRem($pixel) {
+  @return $pixel / 16 * 1rem;
+}
+
+// Variables
+
+$line-height: 1.4;
+$font-size-base: 1rem;
+$font-size-small: 0.85rem;
+$font-size-large: 1.4rem;
+$font-family-default: "Source Sans Pro", sans-serif;
+
+$border-radius-base: _(1/8);
+
+$color-red: #F44336;
+$color-teal-050: #E0F2F1;
+$color-green-050: #F1F8E9;
+$color-green-100: #DCEDC8;
+$color-orange-500: #FF9800;
+$color-blue: hsl(200, 70, 40%);
+$color-gray-dark: #444;
+$color-gray-light: #efefef;
+
+$color-text-secondary: hsl(0, 0, 80%);
+
+$color-link: $color-blue;
+$color-link-hover: lighten($color-link, 10%);
+
+// Breakpoints
+
+$bp-search: pxRem(570);
+$bp-grid-block: pxRem(430);
+$bp-dialog: pxRem(670);

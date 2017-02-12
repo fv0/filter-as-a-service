@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Entdecke Produkte, die du verträgst – Filtered by FAAS</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="favicon.png" />
+	<script src="jquery-1.12.4.js"></script>
+	<script src="openfoodapi.js"></script>
+	<script src="filters.js"></script>
+	<script src="script.js"></script>
+</head>
+<body>
+
+<nav class="ui-widget">
+    <div class="row logo-bar">
+      <div class="container">
+        <div class="column-1-2 no-break">
+          <img src="images/logo-faas.svg" alt="Logo of FAAS" class="ui-widget__logo">
+        </div>
+        <div class="column-1-2 no-break u-text-align-right">
+          <a href="#" class="showDialog"><i class="zmdi zmdi-info-outline"></i>Über</a>
+        </div>
+      </div>
+    </div>
+    <div class="row search-bar">
+      <div class="container">
+        <div class="column-1-2">
+          <label for="filterSelector h3"><span class="number">1</span>Ich bin allergisch/intolerant auf…</label>
+          <div class="filtersView">
+            <select name="SelectFilter" id = "filterSelector" onChange = "updateProductView();">
+              <option value="default">Filter wählen…</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="column-1-2">
+          <label for="search h3"><span class="number">2</span>Ich suche nach…</label>
+          <div class="search">
+            <input id="search" placeholder="Produktname" type="text" class="search__input" onkeypress="return runScript(event)">
+            <button id = searchButton onClick = "search();" class="search__button">Suchen</button>
+            <div class="loader" title="4">
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="30px" viewBox="0 0 24 30" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+                <rect x="0" y="13" width="4" height="5" fill="#333">
+                  <animate attributeName="height" attributeType="XML"
+                    values="5;21;5"
+                    begin="0s" dur="0.6s" repeatCount="indefinite" />
+                  <animate attributeName="y" attributeType="XML"
+                    values="13; 5; 13"
+                    begin="0s" dur="0.6s" repeatCount="indefinite" />
+                </rect>
+                <rect x="10" y="13" width="4" height="5" fill="#333">
+                  <animate attributeName="height" attributeType="XML"
+                    values="5;21;5"
+                    begin="0.15s" dur="0.6s" repeatCount="indefinite" />
+                  <animate attributeName="y" attributeType="XML"
+                    values="13; 5; 13"
+                    begin="0.15s" dur="0.6s" repeatCount="indefinite" />
+                </rect>
+                <rect x="20" y="13" width="4" height="5" fill="#333">
+                  <animate attributeName="height" attributeType="XML"
+                    values="5;21;5"
+                    begin="0.3s" dur="0.6s" repeatCount="indefinite" />
+                  <animate attributeName="y" attributeType="XML"
+                    values="13; 5; 13"
+                    begin="0.3s" dur="0.6s" repeatCount="indefinite" />
+                </rect>
+              </svg>
+            </div>
+          </div>
+        </div><!-- column -->
+      </div><!-- container -->
+    </div>
+
+
+</nav>
+
+<div class="search-results-title hidden">
+  <h1><span class="search-results-amount"></span> Produkte gefunden</h1>
+</div>
+
+<div class="go-search-something container">
+  <img src="images/illustration__discover-food.svg" class="go-search-something__image" alt="Illustration of a tray of food">
+  <h1>Entdecke Produkte, die du verträgst.</h1>
+</div>
+
+<section class="container masonry">
+  <div id="display_result">
+
+  </div>
+  <div id="prototype" class="hidden prototype">
+    <div class="column-1-3">
+      <div class = "productView">
+    		<h2 class = "productNameView">Product name</h2>
+    		<div class = "productImageView">
+    			<img class = "productImage" src = "images/example.jpg">
+    		</div>
+    		<div class = "productDetailsView">
+          <input type="checkbox" class = "showIngredienceCheckBox" id="showIngredients">
+    			<h3 class="productDetailsViewLabel">
+            <label class = "showIngredienceView" for="showIngredients">Ingredients</label>
+          </h3>
+    			<div class = "productContentView">beans, green beans, string beans, berries.</div>
+    		</div>
+			<div class = "productDetailsLinkView"><a href = "https://www.openfood.ch/de/products/" target="_blank" class = "productDetailsLink">Show product details</a></div>
+    		<div class = "warningView"><i class="zmdi zmdi-alert-triangle"></i> Warning: This product contains problematic ingrediences.
+			<div class = "warnReason">Reason.</div>
+			</div>
+    	</div>
+    </div>
+  </div>
+</section>
+
+<div class="backdrop"></div>
+<aside class="dialog">
+  <div class="row">
+    <div class="column-2-3 no-break">
+      <h3>About this project</h3>
+    </div>
+    <div class="column-1-3 u-text-align-right no-break">
+      <a href="" class="hideDialog"><i class="zmdi zmdi-close"></i>Schliessen</a>
+    </div>
+  </div>
+  <div class="row is-scrollable">
+    <h4>What is it?</h4>
+    <p>FAAS stands for “Filter as a Service”. FAAS looks for products that are suitable for people with special dietary needs.</p>
+    <h4>How does it work?</h4>
+    <p>We gather our data over the publicly accessible <a href="https://openfood.ch">OpenFood.ch</a> database. This is an open food product database currently listing about 15,000 items (February 2017). We take the list of ingredients and match it with special filters that apply to certain allergies.
+    <h4>Could you go more into detail?</h4>
+    <p>Someone that has Coeliac Disease can’t digest gluten. A simple word filter for gluten isn’t enough. The “wheat glue” is also part of bulgur, freekeh, beer, soy-sauce, rye, kamut, etc. We create these intelligent filter lists that recognize all of these ingredients and either exclude the product or shows them with a warning, if a certain ingredient might be digestible.
+    <h4>Where are the limits?</h4>
+    <p>This is a prototype. Currently we only support a handful of allergies and intolerances. Also the search function can’t yet differentiate between words enough. So if you have a ingredient that contains a filter word but isn’t an excluding filter, our search function will still exclude it – even though it might be suitable.</p>
+    <h4>Who made this?</h4>
+    <p>This piece of software was made by Ramon Innerhofer, Graham, Frank Calberg and <a href="http://www.ferdinandvogler.com">Ferdinand Vogler</a>. We formed this team at the Open Food Hackdays in Zurich on from February 10–11, 2017.</p>
+    <h4>Links</h4>
+    <p><a href="https://github.com/fv0/filter-as-a-service">Github</a></p>
+  </div>
+
+
+</aside>
+
+<script>
+  $('.showDialog, .hideDialog').click(function() {
+    $('.backdrop, .dialog').toggle();
+  });
+</script>
+
+</body>
+</html>
