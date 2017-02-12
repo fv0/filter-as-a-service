@@ -23,7 +23,7 @@ var filters = {
 	{
 		name: "Schalenfrüchte",
 		  "filter_exclusion": [
-			"Mandeln", "Mandel", "Haselnüsse", "Haselnusse", "Haselnuss", "Haselnussstücke", "Haselnusspaste", "Walnüsse", "Walnuuss", "Kaschunüsse", "Kaschunuss", "Cashewnuss", "Cashewnüsse", "Cashewkerne", "Pekannüsse", "Pekannuuss", "Paranüsse", "Paranuss", "Paranusskerne", "Pistazien", "Pistazie", "Macadamia", "Macadamianuss", "Macadamianüsse", "Queenslandnüsse ", "Queenslandnuss ", "Marzipan"
+			"Mandeln", "Mandel", "Haselnüsse", "Haselnusse", "Haselnuss", "Haselnussstücke", "Haselnusspaste", "Walnüsse", "Walnuuss", "Kaschunüsse", "Kaschunuss", "Cashewnuss", "Cashewnüsse", "Cashewkerne", "Cashenüsse", "Pekannüsse", "Pekannuuss", "Paranüsse", "Paranuss", "Paranusskerne", "Pistazien", "Pistazie", "Macadamia", "Macadamianuss", "Macadamianüsse", "Queenslandnüsse ", "Queenslandnuss ", "Marzipan", "Pinienkernen", "Pinienkern", "Pinienkerne"
 		  ],
 		  "filter_warning": [
 			"Mortadella"
