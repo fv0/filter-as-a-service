@@ -4,7 +4,7 @@ var filters = {
 	{
 		name: "Gluten",
 		  "filter_exclusion": [
-			"Gluten", "Weizen", "Weizenmehl", "Weizenhalbweissmehl", "Weizenhalbweißmehl", "Weizenkorn", "Weizengluten", "Hartweizengrieß", "Hartweizengriess", "hartweizengrieß", "Hartweizengrieß*", "Hartweizen", "Harwiezengriess", "Hartwiezen", "Weizenkeim", "Weizenkeime", "Weizenkörner", "Weizenstärke", "Weizenflocken", "Weizenkleie", "Weizenkleber", "Weizeneiweiß", "Weizeneiweiss", "Gerste", "Gerstenmalz", "Gerstenmalzextrakt", "Roggen", "Roggenmehl", "Roggenvollkornschrot", "Roggenvollkornmehl", "Roggensauerteig", "Hafer", "Dinkel", "Grünkern", "Einkorn", "Kamut", "Bulgur", "Emmer", "Triticale", "Weizeneiweiß", "Weizeneiweiss", "Weizenkleber", "Seitan"
+			"Gluten", "Weizen", "Weizenmehl", "Weizenhalbweissmehl", "Weizenhalbweißmehl", "Weizenkorn", "Weizengluten", "Hartweizengrieß", "Hartweizengriess", "hartweizengrieß", "Hartweizengrieß*", "Hartweizen", "Harwiezengriess", "Hartwiezen", "Weizenkeim", "Weizenkeime", "Weizenkörner", "Weizenstärke", "Weizenflocken", "Weizenkleie", "Weizenkleber", "Weizeneiweiß", "Weizeneiweiss", "Gerste", "Gerstenmalz", "Gerstenmalzextrakt", "Roggen", "Roggenmehl", "Roggenvollkornschrot", "Roggenvollkornmehl", "Roggensauerteig", "Hafer", "Dinkel", "Dinkelschrot", "Grünkern", "Einkorn", "Kamut", "Bulgur", "Emmer", "Triticale", "Weizeneiweiß", "Weizeneiweiss", "Weizenkleber", "Seitan"
 		  ],
 		  "filter_warning": [
 			"Sojasoße", "Sojasosse", "Gerstenmalzextrakt", "Sojasoßenpulver", "Sojasossenpulver"
