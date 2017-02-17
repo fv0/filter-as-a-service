@@ -3,7 +3,7 @@ This is just a draft of what a JavaScript consumption of
 OpenFood's API could be
 */
 
-var PAGESIZE = 50;
+var PAGESIZE = 100;
 
 var openfoodapi = openfoodapi || {
     REVISION: "ALPHA",
