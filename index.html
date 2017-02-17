@@ -94,18 +94,18 @@
   <div id="prototype" class="hidden prototype">
     <div class="column-1-3">
       <div class = "productView">
-    		<h2 class = "productNameView">Product name</h2>
+    		<h2 class = "productNameView">Produktname</h2>
     		<div class = "productImageView">
     			<img class = "productImage" src = "images/example.jpg">
     		</div>
     		<div class = "productDetailsView">
           <input type="checkbox" class = "showIngredienceCheckBox" id="showIngredients">
     			<h3 class="productDetailsViewLabel">
-            <label class = "showIngredienceView" for="showIngredients">Ingredients</label>
+            <label class = "showIngredienceView" for="showIngredients">Zutaten</label>
           </h3>
     			<div class = "productContentView">beans, green beans, string beans, berries.</div>
     		</div>
-			<div class = "productDetailsLinkView"><a href = "https://www.openfood.ch/de/products/" target="_blank" class = "productDetailsLink">Show product details</a></div>
+			<div class = "productDetailsLinkView"><a href = "https://www.openfood.ch/de/products/" target="_blank" class = "productDetailsLink">Produktdetails</a></div>
     		<div class = "warningView"><i class="zmdi zmdi-alert-triangle"></i> Warning: This product contains problematic ingrediences.
 			<div class = "warnReason">Reason.</div>
 			</div>
@@ -118,7 +118,7 @@
 <aside class="dialog">
   <div class="row">
     <div class="column-2-3 no-break">
-      <h3>About this project</h3>
+      <h3>Über dieses Projekt</h3>
     </div>
     <div class="column-1-3 u-text-align-right no-break">
       <a href="" class="hideDialog"><i class="zmdi zmdi-close"></i>Schliessen</a>
@@ -126,17 +126,17 @@
   </div>
   <div class="row is-scrollable">
     <h4>What is it?</h4>
-    <p>FAAS stands for “Filter as a Service”. FAAS looks for products that are suitable for people with special dietary needs.</p>
-    <h4>How does it work?</h4>
-    <p>We gather our data over the publicly accessible <a href="https://openfood.ch">OpenFood.ch</a> database. This is an open food product database currently listing about 15,000 items (February 2017). We take the list of ingredients and match it with special filters that apply to certain allergies.
-    <h4>Could you go more into detail?</h4>
-    <p>Someone that has Coeliac Disease can’t digest gluten. A simple word filter for gluten isn’t enough. The “wheat glue” is also part of bulgur, freekeh, beer, soy-sauce, rye, kamut, etc. We create these intelligent filter lists that recognize all of these ingredients and either exclude the product or shows them with a warning, if a certain ingredient might be digestible.
-    <h4>Where are the limits?</h4>
-    <p>This is a prototype. Currently we only support a handful of allergies and intolerances. Also the search function can’t yet differentiate between words enough. So if you have a ingredient that contains a filter word but isn’t an excluding filter, our search function will still exclude it – even though it might be suitable.</p>
-    <h4>Who made this?</h4>
-    <p>This piece of software was made by Ramon Innerhofer, Graham, Frank Calberg and <a href="http://www.ferdinandvogler.com">Ferdinand Vogler</a>. We formed this team at the Open Food Hackdays in Zurich on from February 10–11, 2017.</p>
+    <p>FAAS steht für “Filter as a Service”. FAAS findet Produkte, die zu deinen Ernährungspräferenzen passt.</p>
+    <h4>Wie funktioniert es?</h4>
+    <p>Wir bekommen unsere Produkte über die <a href="https://openfood.ch">OpenFood.ch-Datenbank</a>. Das ist eine offene Lebensmitteldatenbank mit momentan etwa 15.000 Produkten (Februar 2017). FAAS scannt die Zutatenlisten auf bestimmte Schlagwörter, um dir eine geeignete Auswahl zu geben.
+    <h4>Wie funktioniert das im Detail?</h4>
+    <p>Gehen wir mal davon aus, dass jemand mit Zöliakie ein bestimmtes Lebensmittel sucht ohne den Weizenkleber Gluten, den sein Körper nicht verträgt. Ein simpler Schlagwortfilter für das Wort “Gluten” reicht da nicht aus, da Gluten enthalten ist in Bulgur, Beer, Gerstenmalz, Sojasosse, Dinkel, Kamut, usw. FAAS hat eine intelligente Filterfunktion, der diese Zutaten und zahlreiche Wortkombinationen berücksichtigt.
+    <h4>Welche Grenzen hat die Software bisher?</h4>
+    <p>FAAS ist noch ein Prototyp. Im Moment unterstützen wir nur eine Hand voll von Unverträglichkeiten und Allergien. Diese sind bisher noch nicht kombinierbar. Auch gibt es noch einige Fehler. Dessen sind wir uns bewusst. Wir haben viele tolle Ideen für die weitere Entwicklung und sind gespannt, euch diese bald zeigen zu können. Fehler und Wünsche können in <a href="https://github.com/fv0/filter-as-a-service/issues" target="_blank">unserem öffentlich zugänglichen Quellcode auf Github</a> erfasst werden.</p>
+    <h4>Wer steht hinter diesem Projekt?</h4>
+    <p>Die Software ist an den Open Food Hackdays in Zürich vom 10.–11. Februar 2017 entstanden. Das Team bestand aus Ramon Innerhofer (Backend-Development), Graham Tritt (Concept), Frank Calberg (Documentation) and <a href="http://www.ferdinandvogler.com">Ferdinand Vogler</a> (Design und Frontend-Development).</p>
     <h4>Links</h4>
-    <p><a href="https://github.com/fv0/filter-as-a-service">Github</a></p>
+    <p><a href="https://github.com/fv0/filter-as-a-service" target="_blank">Github</a></p>
   </div>
 
 
