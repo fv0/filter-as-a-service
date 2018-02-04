@@ -12,6 +12,7 @@ var filters = {
         "Dinkelschrot",
         "Dinkelvollkornflocken",
         "Dinkelvollkornmehl",
+        "Bio Dinkelvollkornmehl",
         "Dinkelvollkornnudeln",
         "Dinkelvollkornschrot",
         "Einkorn",
@@ -83,7 +84,10 @@ var filters = {
         "Weizenmehl",
         "Weiizenmehl",
         "Welzenmehl",
-        "Weizenstärke"
+        "Weizenstärke",
+        "Weizenweissmehl",
+        "Weissmehl",
+        "Haushaltmehl"
       ],
       "filter_warning": [
         "Sojasoße",
